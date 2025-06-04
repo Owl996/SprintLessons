@@ -1,6 +1,6 @@
 package lesson_1
 
 fun main() {
-    println("Тестовое решение к уроку 1 задаче 1")
-    println("Какие то доработки")
+    var ordersCount: Long = 75
+    val purchaseMessage: String = "Thanks for the purchase"
 }

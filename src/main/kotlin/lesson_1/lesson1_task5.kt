@@ -13,7 +13,6 @@ fun main() {
     val remainingMinutes = (minutes % SECONDS_IN_MINUTE)
 
     println("%02d:%02d:%02d".format(hours, remainingMinutes, remainingSeconds))
-
 }
 
 

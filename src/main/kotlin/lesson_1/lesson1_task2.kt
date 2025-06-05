@@ -2,15 +2,15 @@ package lesson_1
 
 fun main() {
 
-    var ordersCount: Long = 75
+    val ordersCount: Int = 75
     val purchaseMessage: String = "Thanks for the purchase"
 
     println(ordersCount)
     println(purchaseMessage)
 
-//    var employees: Int = 2000
+    var employees: Int = 2000
 //    println(employees)
 
-    var employees: Int = 1999
+    employees = 1999
     println(employees)
 }

@@ -1,15 +1,19 @@
 package lesson_1
 
+const val SECONDS_IN_MINUTE = 60
+
 fun main() {
+
     val secondsInSpace = 6480
 
-    val minutes = (secondsInSpace / 60)
-    val hours = minutes / 60
+    val minutes = (secondsInSpace / SECONDS_IN_MINUTE)
+    val hours = (minutes / SECONDS_IN_MINUTE)
 
-    val remainingSeconds = secondsInSpace % 60
-    val remainingMinutes = minutes % 60
+    val remainingSeconds = (secondsInSpace % SECONDS_IN_MINUTE)
+    val remainingMinutes = (minutes % SECONDS_IN_MINUTE)
 
-    val timeString = String.format("%02d:%02d:%02d", hours, remainingMinutes, remainingSeconds)
-    println(timeString)
+    println("%02d:%02d:%02d".format(hours, remainingMinutes, remainingSeconds))
+
 }
+
 

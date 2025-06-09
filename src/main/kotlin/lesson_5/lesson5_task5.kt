@@ -40,9 +40,9 @@ fun main() {
 
         when (matchedCount) {
             3 -> println("Поздравляем! Вы выиграли главный приз!")
-            2 -> println("Вы угадали два числа и получаете утешительный приз")
+            2 -> println("Вы угадали два числа и получаете крупный приз")
             1 -> println("Вы угадали только одно число и получаете утешительный приз")
-            else -> println("Неудача!")
+            else -> println("Неудача!\nвы не угадали ни одного числа")
         }
 
         println("Выигрышные числа были: [$firstRandomNumber | $secondRandomNumber | $thirdRandomNumber]")

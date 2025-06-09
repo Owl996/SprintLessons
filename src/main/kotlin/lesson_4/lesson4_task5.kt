@@ -3,8 +3,6 @@ package lesson_4
 const val MAX_MEMBERS_OF_CREW = 70
 const val MIN_MEMBERS_OF_CREW = 55
 const val MIN_BOXES_WITH_PROVISIONS = 55
-const val IS_TRUE = true
-const val IS_FALSE = false
 
 fun main() {
 
@@ -58,8 +56,8 @@ fun shipDamageUserInput(): Boolean {
     """.trimIndent()
         )
         when (readln().toIntOrNull()) {
-            1 -> return IS_TRUE
-            2 -> return IS_FALSE
+            1 -> return true
+            2 -> return false
             else -> println("Некорректные данные , попробуйте снова")
         }
     }
@@ -75,8 +73,8 @@ fun favorableWeatherUserInput(): Boolean {
     """.trimIndent()
         )
         when (readln().toIntOrNull()) {
-            1 -> return IS_TRUE
-            2 -> return IS_FALSE
+            1 -> return true
+            2 -> return false
             else -> println("Некорректные данные , попробуйте снова")
         }
     }

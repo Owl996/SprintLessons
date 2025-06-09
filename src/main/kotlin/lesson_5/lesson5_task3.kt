@@ -1,9 +1,12 @@
 package lesson_5
 
+const val MIN_NUMBER_VALUE = 0
+const val MAX_NUMBER_VALUE = 42
+
 fun main() {
 
-    val firstRandomNumber = (0..42).random()
-    val secondRandomNumber = (0..42).random()
+    val firstRandomNumber = (MIN_NUMBER_VALUE..MAX_NUMBER_VALUE).random()
+    val secondRandomNumber = (MIN_NUMBER_VALUE..MAX_NUMBER_VALUE).random()
 
     println("Введите введите два ваших числа через запятую в диапазоне от 0 до 42.\n Например: 33,22")
 
@@ -20,8 +23,8 @@ fun main() {
         val firstNumber = splitUserMessage[0].trim().toInt()
         val secondNumber = splitUserMessage[1].trim().toInt()
 
-        if (firstNumber !in 0..42 || secondNumber !in 0..42) {
-            println("Ошибка: ваши числа должны быть в диапазоне от 0 до 42.")
+        if (firstNumber !in MIN_NUMBER_VALUE..MAX_NUMBER_VALUE || secondNumber !in MIN_NUMBER_VALUE..MAX_NUMBER_VALUE) {
+            println("Ошибка: ваши числа должны быть в диапазоне от $MIN_NUMBER_VALUE до $MAX_NUMBER_VALUE.")
             return
         }
 

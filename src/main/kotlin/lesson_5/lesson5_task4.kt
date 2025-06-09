@@ -17,10 +17,19 @@ fun main() {
     )
 
     val userNameInput = readln()
+
+    if (USER_NAME_LOGIN == userNameInput) {
+        println("Введен верный логин")
+    } else {
+        println("Пользователя с именем пользователя [$userNameInput] не существует")
+        println("Вам необходимо пройти регистрацию")
+        return
+    }
+
     println("А теперь , пожалуйста, введите свой пароль")
     val userPasswordInput = readln()
 
-    if (USER_NAME_LOGIN == userNameInput && USER_PASSWORD == userPasswordInput) {
+    if (USER_PASSWORD == userPasswordInput) {
         println(
             """
              |[вздыхает...] Ваши данные проверены, и о, чудо, они верны...
@@ -32,6 +41,6 @@ fun main() {
         """.trimMargin()
         )
     } else
-        println("Пользовать не зарегистрирован , вам необходимо пройти регистрацию")
+        println("Введен неверный пароль, повторите попытку")
     return
 }

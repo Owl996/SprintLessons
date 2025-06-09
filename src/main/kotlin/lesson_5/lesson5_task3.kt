@@ -1,12 +1,12 @@
 package lesson_5
 
-const val MIN_NUMBER_VALUE = 0
-const val MAX_NUMBER_VALUE = 42
+const val MIN_NUMBER_ROLL = 0
+const val MAX_NUMBER_ROLL = 42
 
 fun main() {
 
-    val firstRandomNumber = (MIN_NUMBER_VALUE..MAX_NUMBER_VALUE).random()
-    val secondRandomNumber = (MIN_NUMBER_VALUE..MAX_NUMBER_VALUE).random()
+    val firstRandomNumber = (MIN_NUMBER_ROLL..MAX_NUMBER_ROLL).random()
+    val secondRandomNumber = (MIN_NUMBER_ROLL..MAX_NUMBER_ROLL).random()
 
     println("Введите введите два ваших числа через запятую в диапазоне от 0 до 42.\n Например: 33,22")
 
